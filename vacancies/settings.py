@@ -14,6 +14,17 @@ BOT_NAME = 'vacancies'
 SPIDER_MODULES = ['vacancies.spiders']
 NEWSPIDER_MODULE = 'vacancies.spiders'
 
+SPIDER_MODULES = ['vacancies.spiders']
+NEWSPIDER_MODULE = 'vacancies.spiders'
+
+ITEM_PIPELINES = {
+    'vacancies.pipelines.VacanciesPipeline': 300,
+}
+
+MONGODB_SERVER = "127.0.0.1"
+MONGODB_PORT = 27017
+MONGODB_DB = "spiderjobs"
+MONGODB_COLLECTION = "vacancies"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'vacancies (+http://www.yourdomain.com)'
