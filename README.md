@@ -5,6 +5,9 @@ web crawler based on Python's scrapy that stores data to mongodb database
 - Python, Scrapy framework
 - Database: MongoDB
 
+#### Install all the required dependenies
+- pip install -r requirements.txt
+
 #### From the top level directory, i.e., vacancies/ run the following command 
 - scrapy crawl vacancies
 
