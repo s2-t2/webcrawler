@@ -34,3 +34,8 @@ Alternatively, to store the scraped data into a json file:
 ## Screenshot
 ![database](images/database_collections.png "database")
 
+##### REFERENCES 	
+- https://docs.scrapy.org/en/latest/topics/item-pipeline.html#writing-your-own-item-pipeline	
+- https://docs.scrapy.org/en/latest/intro/tutorial.html#our-first-spider	
+- https://realpython.com/web-scraping-and-crawling-with-scrapy-and-mongodb/
+
