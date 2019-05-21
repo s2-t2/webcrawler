@@ -1,19 +1,36 @@
-# webcrawler
-web crawler based on Python's scrapy that stores data to mongodb database
+# Web Crawler
 
-## Technology stack and libraries used
+Fetches job ad information, i.e., job title, company name, and job location from the following websites:  
+
+ - https://www.monster.se/jobb
+ - https://www.stepstone.se
+
+# Technology stack 
 - Python, Scrapy framework
 - Database: MongoDB
 
-#### Install all the required dependenies
-- pip install -r requirements.txt
+## Scrapy architecture 
+![Scrapy architecture]("images/scrapy_architecture_02.png")
+Source: https://docs.scrapy.org/en/latest/topics/architecture.html
 
-#### From the top level directory, i.e., vacancies/ run the following command 
-- scrapy crawl vacancies
+## To run the vacancies spider  
 
-Running this command will create a database named items and vacancies collection that stores the data (job title, company name, and job location) from monster.se and stepstone.se 
+First, install the required dependencies:  
 
-##### REFERENCES 
-- https://docs.scrapy.org/en/latest/topics/item-pipeline.html#writing-your-own-item-pipeline
-- https://docs.scrapy.org/en/latest/intro/tutorial.html#our-first-spider
-- https://realpython.com/web-scraping-and-crawling-with-scrapy-and-mongodb/
+    pip install -r requirements.txt
+
+Assuming MongoDB is installed and running locally on port 27017 (database settings can be found in vacancies/settings.py)
+Run the following command:
+
+     scrapy crawl vacancies
+This will create the database "spiderjobs" that has "vacancies" collections. The "vacancies" collection will be populated with the scraped data (job, company, location). 
+
+Alternatively, to store the scraped data into a json file:
+
+    scrapy crawl vacancies -o <filename.json>
+
+
+## Screenshot
+
+![database]("images/database_collections.png")
+
