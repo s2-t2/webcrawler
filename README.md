@@ -10,7 +10,8 @@ Fetches job ad information, i.e., job title, company name, and job location from
 - Database: MongoDB
 
 ## Scrapy architecture 
-![Scrapy architecture]("images/scrapy_architecture_02.png")
+![Scrapy architecture](images/scrapy_architecture_02.png "Scrapy architecture")
+
 Source: https://docs.scrapy.org/en/latest/topics/architecture.html
 
 ## To run the vacancies spider  
@@ -31,6 +32,5 @@ Alternatively, to store the scraped data into a json file:
 
 
 ## Screenshot
-
-![database]("images/database_collections.png")
+![database](images/database_collections.png "database")
 
